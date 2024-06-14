@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Lexend";
+  src: url(/fonts/Lexend/static/Lexend-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  position: relative;
+  max-width: 1920px;
+  min-height: 1265px;
+  //width: 100%;
+  padding-top: 16px;
+  background-color: #191D0A;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 48px;
+    max-width: 1640px;
+    width: 100%;
+    height: 96px;
+    margin: 0 auto;
+    border: 4px solid #F97247;
+    border-radius: 64px;
+    &__menu{
+      max-width: 574px;
+      width: 100%;
+      &__list{
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;
+        padding: 0;
+        &-item{
+          &:hover{
+            transform: scale(1.1);
+          }
+          .header-link{
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "Lexend";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.25rem;
+          }
+        }
+      }
+    }
+    &__buttons{
+      max-width: 287px;
+      width: 100%;
+      height: 48px;
+      display: flex;
+      gap: 14px;
+      .button-language, .button-login, .button-signup{
+        color: #FFFFFF;
+        font-family: "Lexend";
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 24px;
+        height:48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      .button-language{
+        width: 75px;
+        gap: 8px;
+        border: 2px solid #EBF29D;
+      }
+      .button-login{
+        width: 87px;
+        border: 2px solid #EBF29D;
+      }
+      .button-signup{
+        width: 97px;
+        background-color: #F97247;
+      }
+    }
+  }
+
+  .main{
+    height: 960px;
+    position: relative;
+    &__dot-left{
+      width: 226.46px;
+      height: 1302.47px;
+      position: absolute;
+      top:-184.26px;
+      left: 306.61px;
+      background: linear-gradient( #F947BC 100%, #F9477C 40%);
+      transform: rotate(-54.31deg);
+      filter: blur(300px);
+      opacity: 0.55;
+      border-radius: 100%;
+    }
+    &__dot-right{
+      width:574px;
+      height: 574px;
+      position: absolute;
+      top:570px;
+      left: 1505px;
+      background: linear-gradient( #F99247 100%, #F29DA2 100%);
+      opacity: 0.7;
+      filter: blur(300px);
+      border-radius: 100%;
+    }
+    &__title{
+      position: absolute;
+      top:296px;
+      left: 140px;
+      .title{
+        font-family: "Lexend";
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 6rem;
+        color: #FFFFFF;
+        width: 669px;
+        margin-bottom: 1.5rem;
+        .colortext{
+          color: #F97247;
+        }
+      }
+      .description{
+        font-family: "Lexend";
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 3rem;
+      }
+      .button-partner{
+        width:265px;
+        height: 72px;
+        padding: 20px, 72px, 20px, 72px;
+        background-color: #F97247;
+        border-radius: 48px;
+        border: none;
+        color: #FFFFFF;
+        font-family: "Lexend";
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+      }
+    }
+    &__banner{}
+    &__blog{
+      width: 531px;
+      height: 659px;
+      position: absolute;
+      top:140px;
+      left: 1249px;
+      &-title{
+        font-family: "Lexend";
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      &-conteiner{
+        width: 531px;
+        height: 595px;
+        border: 3px solid #F97247;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 16px;
+        padding-top: 24px;
+        overflow: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #F97247 rgba(255, 255, 255, 0.12);
+        &-card{
+          display: flex;
+          flex-direction: column;
+          width:467px;
+          height: 146px;
+          border-radius: 196px;
+          padding: 16px 64px 16px 64px;
+          background-color: rgba(49, 18, 18, 1);
+          .card-text{
+            color: #FFFFFF;
+            font-family: "Lexend";
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.75rem;
+          }
+          .card-date{
+            font-family: "Lexend";
+            font-size: 0.875rem;
+            font-weight: 450;
+            line-height: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .footer{
+    width: 100%;
+    min-height: 130px;
+    border: 4px solid rgb(249, 114, 71);
+    border-bottom: 0px;
+    border-radius: 64px 64px 0px 0px;
+    position: absolute;
+    top: 1138px;
+    background-color: rgba(230, 19, 56, 0.15);
+    padding-top: 40px;
+    &__content{
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: end;
+      max-width: 1640px;
+      width: 100%;
+      height: 66px;
+      &__menu{
+        &__list{
+          display: flex;
+          list-style-type: none;
+          gap: 40px;
+          &-item {
+            .footer-link{
+            text-decoration: none;
+            color:#FFFFFF;
+            font-family: "Lexend";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.25rem;
+            }
+            .footer-link-active{
+              color: #F97247;
+            }
+          }
+        }
+      }
+      &__social-area{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        .social-area__title{
+          color:#FFFFFF;
+          font-family: "Lexend";
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+        }
+        .social-area__conteiner{
+          display: flex;
+          gap:8px;
+          justify-content: space-between;
+        }
+        .social-area__picture{
+          .image{
+            filter:  invert(50%) sepia(67%) saturate(521%) hue-rotate(327deg) brightness(97%) contrast(101%);
+            &:hover{
+              background: linear-gradient( #F99247 100%, #F29DA2 100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

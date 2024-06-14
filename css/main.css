@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Lexend";
+  src: url(/fonts/Lexend/static/Lexend-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  position: relative;
+  max-width: 1920px;
+  min-height: 1265px;
+  padding-top: 16px;
+  background-color: #191D0A;
+}
+.conteiner .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 48px;
+  max-width: 1640px;
+  width: 100%;
+  height: 96px;
+  margin: 0 auto;
+  border: 4px solid #F97247;
+  border-radius: 64px;
+}
+.conteiner .header__menu {
+  max-width: 574px;
+  width: 100%;
+}
+.conteiner .header__menu__list {
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.conteiner .header__menu__list-item:hover {
+  transform: scale(1.1);
+}
+.conteiner .header__menu__list-item .header-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.conteiner .header__buttons {
+  max-width: 287px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  gap: 14px;
+}
+.conteiner .header__buttons .button-language, .conteiner .header__buttons .button-login, .conteiner .header__buttons .button-signup {
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner .header__buttons .button-language:hover, .conteiner .header__buttons .button-login:hover, .conteiner .header__buttons .button-signup:hover {
+  transform: scale(1.1);
+}
+.conteiner .header__buttons .button-language {
+  width: 75px;
+  gap: 8px;
+  border: 2px solid #EBF29D;
+}
+.conteiner .header__buttons .button-login {
+  width: 87px;
+  border: 2px solid #EBF29D;
+}
+.conteiner .header__buttons .button-signup {
+  width: 97px;
+  background-color: #F97247;
+}
+.conteiner .main {
+  height: 960px;
+  position: relative;
+}
+.conteiner .main__dot-left {
+  width: 226.46px;
+  height: 1302.47px;
+  position: absolute;
+  top: -184.26px;
+  left: 306.61px;
+  background: linear-gradient(#F947BC 100%, #F9477C 40%);
+  transform: rotate(-54.31deg);
+  filter: blur(300px);
+  opacity: 0.55;
+  border-radius: 100%;
+}
+.conteiner .main__dot-right {
+  width: 574px;
+  height: 574px;
+  position: absolute;
+  top: 570px;
+  left: 1505px;
+  background: linear-gradient(#F99247 100%, #F29DA2 100%);
+  opacity: 0.7;
+  filter: blur(300px);
+  border-radius: 100%;
+}
+.conteiner .main__title {
+  position: absolute;
+  top: 296px;
+  left: 140px;
+}
+.conteiner .main__title .title {
+  font-family: "Lexend";
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 6rem;
+  color: #FFFFFF;
+  width: 669px;
+  margin-bottom: 1.5rem;
+}
+.conteiner .main__title .title .colortext {
+  color: #F97247;
+}
+.conteiner .main__title .description {
+  font-family: "Lexend";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3rem;
+}
+.conteiner .main__title .button-partner {
+  width: 265px;
+  height: 72px;
+  padding: 20px, 72px, 20px, 72px;
+  background-color: #F97247;
+  border-radius: 48px;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.conteiner .main__blog {
+  width: 531px;
+  height: 659px;
+  position: absolute;
+  top: 140px;
+  left: 1249px;
+}
+.conteiner .main__blog-title {
+  font-family: "Lexend";
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.conteiner .main__blog-conteiner {
+  width: 531px;
+  height: 595px;
+  border: 3px solid #F97247;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding-top: 24px;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #F97247 rgba(255, 255, 255, 0.12);
+}
+.conteiner .main__blog-conteiner-card {
+  display: flex;
+  flex-direction: column;
+  width: 467px;
+  height: 146px;
+  border-radius: 196px;
+  padding: 16px 64px 16px 64px;
+  background-color: rgb(49, 18, 18);
+}
+.conteiner .main__blog-conteiner-card .card-text {
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+.conteiner .main__blog-conteiner-card .card-date {
+  font-family: "Lexend";
+  font-size: 0.875rem;
+  font-weight: 450;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.conteiner .footer {
+  width: 100%;
+  min-height: 130px;
+  border: 4px solid rgb(249, 114, 71);
+  border-bottom: 0px;
+  border-radius: 64px 64px 0px 0px;
+  position: absolute;
+  top: 1138px;
+  background-color: rgba(230, 19, 56, 0.15);
+  padding-top: 40px;
+}
+.conteiner .footer__content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 1640px;
+  width: 100%;
+  height: 66px;
+}
+.conteiner .footer__content__menu__list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+.conteiner .footer__content__menu__list-item .footer-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.conteiner .footer__content__menu__list-item .footer-link-active {
+  color: #F97247;
+}
+.conteiner .footer__content__social-area {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.conteiner .footer__content__social-area .social-area__title {
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.conteiner .footer__content__social-area .social-area__conteiner {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.conteiner .footer__content__social-area .social-area__picture .image {
+  filter: invert(50%) sepia(67%) saturate(521%) hue-rotate(327deg) brightness(97%) contrast(101%);
+}
+.conteiner .footer__content__social-area .social-area__picture .image:hover {
+  background: linear-gradient(#F99247 100%, #F29DA2 100%);
+}/*# sourceMappingURL=main.css.map */
