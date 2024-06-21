@@ -4,7 +4,6 @@
   font-weight: 400;
 }
 
-
 *{
   margin: 0;
   padding: 0;
@@ -15,7 +14,8 @@
   position: relative;
   max-width: 1920px;
   min-height: 1265px;
-  //width: 100%;
+  overflow: hidden;
+  width: 100%;
   padding-top: 16px;
   background-color: #191D0A;
   .header {
@@ -29,6 +29,9 @@
     margin: 0 auto;
     border: 4px solid #F97247;
     border-radius: 64px;
+    @media screen and (max-width:1600px){
+      width: 1200px;
+    }
     &__menu{
       max-width: 574px;
       width: 100%;
@@ -92,8 +95,12 @@
   }
 
   .main{
-    height: 960px;
+    max-height: 960px;
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px 0 140px;
     &__dot-left{
       width: 226.46px;
       height: 1302.47px;
@@ -118,9 +125,9 @@
       border-radius: 100%;
     }
     &__title{
-      position: absolute;
-      top:296px;
-      left: 140px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       .title{
         font-family: "Lexend";
         font-size: 6rem;
@@ -155,13 +162,13 @@
         line-height: 2rem;
       }
     }
-    &__banner{}
     &__blog{
-      width: 531px;
-      height: 659px;
-      position: absolute;
-      top:140px;
-      left: 1249px;
+      max-width: 531px;
+      width: 100%;
+      min-height: 659px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       &-title{
         font-family: "Lexend";
         font-size: 2.5rem;
@@ -183,9 +190,12 @@
         justify-content: space-evenly;
         gap: 16px;
         padding-top: 24px;
-        overflow: scroll;
+        overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-color: #F97247 rgba(255, 255, 255, 0.12);
+        &::-webkit-scrollbar-track {
+          height: 500px;
+        }
         &-card{
           display: flex;
           flex-direction: column;
@@ -207,72 +217,6 @@
             font-weight: 450;
             line-height: 1rem;
             color: rgba(255, 255, 255, 0.6);
-          }
-        }
-      }
-    }
-  }
-
-  .footer{
-    width: 100%;
-    min-height: 130px;
-    border: 4px solid rgb(249, 114, 71);
-    border-bottom: 0px;
-    border-radius: 64px 64px 0px 0px;
-    position: absolute;
-    top: 1138px;
-    background-color: rgba(230, 19, 56, 0.15);
-    padding-top: 40px;
-    &__content{
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-      align-items: end;
-      max-width: 1640px;
-      width: 100%;
-      height: 66px;
-      &__menu{
-        &__list{
-          display: flex;
-          list-style-type: none;
-          gap: 40px;
-          &-item {
-            .footer-link{
-            text-decoration: none;
-            color:#FFFFFF;
-            font-family: "Lexend";
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.25rem;
-            }
-            .footer-link-active{
-              color: #F97247;
-            }
-          }
-        }
-      }
-      &__social-area{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        .social-area__title{
-          color:#FFFFFF;
-          font-family: "Lexend";
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.25rem;
-        }
-        .social-area__conteiner{
-          display: flex;
-          gap:8px;
-          justify-content: space-between;
-        }
-        .social-area__picture{
-          .image{
-            filter:  invert(50%) sepia(67%) saturate(521%) hue-rotate(327deg) brightness(97%) contrast(101%);
-            &:hover{
-              background: linear-gradient( #F99247 100%, #F29DA2 100%);
-            }
           }
         }
       }
