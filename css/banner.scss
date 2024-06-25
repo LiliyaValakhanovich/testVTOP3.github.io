@@ -100,3 +100,26 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 320px){
+  .main__banner{
+    transform: rotate(90deg);
+    gap: 8px;
+    width: 165px;
+    height: 659px;
+    overflow: visible;
+    position: absolute ;
+    &-line1, &-line2, &-line3{
+      width: 49px;
+      height: 100%;
+      .image{
+        width:49px;
+        height: 49px;
+      }
+      .image-big{
+        width: 49px;
+        height: 109px;
+      }
+    }
+  }
+}

@@ -1,99 +1,4 @@
-@font-face {
-  font-family: "Lexend";
-  src: url(/fonts/Lexend/static/Lexend-Regular.ttf) format("truetype");
-  font-weight: 400;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.conteiner {
-  position: relative;
-  max-width: 1920px;
-  min-height: 1265px;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 16px;
-  background-color: #191D0A;
-}
-.conteiner .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 48px;
-  max-width: 1640px;
-  width: 100%;
-  height: 96px;
-  margin: 0 auto;
-  border: 4px solid #F97247;
-  border-radius: 64px;
-}
-@media screen and (max-width: 1600px) {
-  .conteiner .header {
-    width: 1200px;
-  }
-}
-.conteiner .header__menu {
-  max-width: 574px;
-  width: 100%;
-}
-.conteiner .header__menu__list {
-  list-style-type: none;
-  display: flex;
-  gap: 32px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-.conteiner .header__menu__list-item:hover {
-  transform: scale(1.1);
-}
-.conteiner .header__menu__list-item .header-link {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: "Lexend";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-}
-.conteiner .header__buttons {
-  max-width: 287px;
-  width: 100%;
-  height: 48px;
-  display: flex;
-  gap: 14px;
-}
-.conteiner .header__buttons .button-language, .conteiner .header__buttons .button-login, .conteiner .header__buttons .button-signup {
-  color: #FFFFFF;
-  font-family: "Lexend";
-  font-size: 1rem;
-  font-weight: 400;
-  border-radius: 24px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.conteiner .header__buttons .button-language:hover, .conteiner .header__buttons .button-login:hover, .conteiner .header__buttons .button-signup:hover {
-  transform: scale(1.1);
-}
-.conteiner .header__buttons .button-language {
-  width: 75px;
-  gap: 8px;
-  border: 2px solid #EBF29D;
-}
-.conteiner .header__buttons .button-login {
-  width: 87px;
-  border: 2px solid #EBF29D;
-}
-.conteiner .header__buttons .button-signup {
-  width: 97px;
-  background-color: #F97247;
-}
-.conteiner .main {
+.main {
   max-height: 960px;
   width: 100%;
   position: relative;
@@ -101,7 +6,7 @@
   justify-content: space-between;
   padding: 0 140px 0 140px;
 }
-.conteiner .main__dot-left {
+.main__dot-left {
   width: 226.46px;
   height: 1302.47px;
   position: absolute;
@@ -113,7 +18,7 @@
   opacity: 0.55;
   border-radius: 100%;
 }
-.conteiner .main__dot-right {
+.main__dot-right {
   width: 574px;
   height: 574px;
   position: absolute;
@@ -124,12 +29,12 @@
   filter: blur(300px);
   border-radius: 100%;
 }
-.conteiner .main__title {
+.main__title {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.conteiner .main__title .title {
+.main__title .title {
   font-family: "Lexend";
   font-size: 6rem;
   font-weight: 500;
@@ -138,10 +43,10 @@
   width: 669px;
   margin-bottom: 1.5rem;
 }
-.conteiner .main__title .title .colortext {
+.main__title .title .colortext {
   color: #F97247;
 }
-.conteiner .main__title .description {
+.main__title .description {
   font-family: "Lexend";
   font-size: 2rem;
   font-weight: 500;
@@ -149,7 +54,7 @@
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 3rem;
 }
-.conteiner .main__title .button-partner {
+.main__title .button-partner {
   width: 265px;
   height: 72px;
   padding: 20px, 72px, 20px, 72px;
@@ -162,7 +67,7 @@
   font-weight: 600;
   line-height: 2rem;
 }
-.conteiner .main__blog {
+.main__blog {
   max-width: 531px;
   width: 100%;
   min-height: 659px;
@@ -170,7 +75,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.conteiner .main__blog-title {
+.main__blog-title {
   font-family: "Lexend";
   font-size: 2.5rem;
   font-weight: 600;
@@ -179,7 +84,7 @@
   text-align: center;
   margin-bottom: 24px;
 }
-.conteiner .main__blog-conteiner {
+.main__blog-conteiner {
   width: 531px;
   height: 595px;
   border: 3px solid #F97247;
@@ -195,10 +100,10 @@
   scrollbar-width: thin;
   scrollbar-color: #F97247 rgba(255, 255, 255, 0.12);
 }
-.conteiner .main__blog-conteiner::-webkit-scrollbar-track {
+.main__blog-conteiner::-webkit-scrollbar-track {
   height: 500px;
 }
-.conteiner .main__blog-conteiner-card {
+.main__blog-conteiner-card {
   display: flex;
   flex-direction: column;
   width: 467px;
@@ -207,17 +112,96 @@
   padding: 16px 64px 16px 64px;
   background-color: rgb(49, 18, 18);
 }
-.conteiner .main__blog-conteiner-card .card-text {
+.main__blog-conteiner-card .card-text {
   color: #FFFFFF;
   font-family: "Lexend";
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.75rem;
 }
-.conteiner .main__blog-conteiner-card .card-date {
+.main__blog-conteiner-card .card-date {
   font-family: "Lexend";
   font-size: 0.875rem;
   font-weight: 450;
   line-height: 1rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    min-height: 1064px;
+    width: 100%;
+    flex-direction: column;
+    padding: 70px 0;
+  }
+  .main__dot-left {
+    width: 81px;
+    height: 466px;
+    top: -40px;
+    left: 90px;
+    filter: blur(40px);
+  }
+  .main__dot-right {
+    width: 240px;
+    height: 240px;
+    top: 899px;
+    left: 177px;
+    filter: blur(150px);
+  }
+  .main__title {
+    margin: 0 auto;
+    position: absolute;
+    left: 10px;
+    z-index: 5;
+  }
+  .main__title .title {
+    font-size: 2.875rem;
+    line-height: 3.125rem;
+    margin-bottom: 0.75rem;
+    width: 284px;
+  }
+  .main__title .description {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__title .button-partner {
+    width: 284px;
+    height: 53px;
+    padding: 15px 20px;
+    font-size: 1.125rem;
+    line-height: 1.4rem;
+  }
+  .main__blog {
+    position: absolute;
+    top: 515px;
+    left: 10px;
+    max-width: 284px;
+    width: 100%;
+    min-height: 479px;
+  }
+  .main__blog-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .main__blog-conteiner {
+    width: 284px;
+    height: 421px;
+  }
+  .main__blog-conteiner-card {
+    width: 258px;
+    height: 112px;
+    padding: 15px 35px;
+  }
+  .main__blog-conteiner-card .card-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .main__blog-conteiner-card .card-date {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 450;
+  }
 }/*# sourceMappingURL=main.css.map */

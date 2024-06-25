@@ -98,4 +98,26 @@
   100% {
     transform: translateY(0);
   }
+}
+@media screen and (max-width: 320px) {
+  .main__banner {
+    transform: rotate(90deg);
+    gap: 8px;
+    width: 165px;
+    height: 659px;
+    overflow: visible;
+    position: absolute;
+  }
+  .main__banner-line1, .main__banner-line2, .main__banner-line3 {
+    width: 49px;
+    height: 100%;
+  }
+  .main__banner-line1 .image, .main__banner-line2 .image, .main__banner-line3 .image {
+    width: 49px;
+    height: 49px;
+  }
+  .main__banner-line1 .image-big, .main__banner-line2 .image-big, .main__banner-line3 .image-big {
+    width: 49px;
+    height: 109px;
+  }
 }/*# sourceMappingURL=banner.css.map */
