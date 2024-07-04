@@ -101,11 +101,9 @@
       position: relative;
       .burger-item{
         position: absolute;
-        //border-top: 3px solid #FFFFFF;
         background-color: #FFFFFF;
         width: 21px;
         height: 2px;
-        //padding-top: 4px;
       }
       .burger-item:nth-child(2){
         transform: translateY(6px);
@@ -126,7 +124,6 @@
       }
     }
     &__burger-menu{
-      //display: none;
       position: absolute;
       top:66px;
       left:0;
