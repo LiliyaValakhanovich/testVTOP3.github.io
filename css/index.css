@@ -99,11 +99,28 @@
   width: 36px;
   height: 36px;
   padding: 11px 7.5px;
+  position: relative;
 }
 .conteiner .header__burger .burger-item {
-  border-top: 3px solid #FFFFFF;
+  position: absolute;
+  background-color: #FFFFFF;
   width: 21px;
-  padding-top: 4px;
+  height: 2px;
+}
+.conteiner .header__burger .burger-item:nth-child(2) {
+  transform: translateY(6px);
+}
+.conteiner .header__burger .burger-item:nth-child(3) {
+  transform: translateY(12px);
+}
+.conteiner .header__burger.open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.conteiner .header__burger.open span:nth-child(3) {
+  transform: translateY(6px) rotate(-45deg);
+}
+.conteiner .header__burger.open span:nth-child(2) {
+  opacity: 0;
 }
 .conteiner .header__burger-menu {
   position: absolute;

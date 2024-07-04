@@ -98,10 +98,31 @@
       width:36px;
       height: 36px;
       padding: 11px 7.5px;
+      position: relative;
       .burger-item{
-        border-top: 3px solid #FFFFFF;
+        position: absolute;
+        //border-top: 3px solid #FFFFFF;
+        background-color: #FFFFFF;
         width: 21px;
-        padding-top: 4px;
+        height: 2px;
+        //padding-top: 4px;
+      }
+      .burger-item:nth-child(2){
+        transform: translateY(6px);
+      }
+      .burger-item:nth-child(3){
+        transform: translateY(12px);
+      }
+    }
+    &__burger.open {
+      span:nth-child(1){
+        transform: translateY(6px) rotate(45deg);
+      }
+      span:nth-child(3){
+        transform: translateY(6px) rotate(-45deg);
+      }
+      span:nth-child(2){
+        opacity: 0;
       }
     }
     &__burger-menu{
@@ -176,6 +197,7 @@
     .visible{
       display: block;
     }
+    
   }
 }
 
