@@ -101,6 +101,20 @@
   }
 }
 
+@media screen and (max-width: 1600px){
+  .main__banner{
+    max-width:315px;
+    gap:8px;
+    &-line1, &-line2, &-line3{
+      width:97px;
+      .image{
+        width:97px;
+        height: 97px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 320px){
   .main__banner{
     transform: rotate(90deg);

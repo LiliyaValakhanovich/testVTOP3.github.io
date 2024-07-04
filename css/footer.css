@@ -21,6 +21,7 @@
   display: flex;
   list-style-type: none;
   gap: 40px;
+  padding-left: 0;
 }
 .footer__content__menu__list-item .footer-link {
   text-decoration: none;
@@ -78,6 +79,11 @@
   background: linear-gradient(#F99247 100%, #F29DA2 100%);
 }
 
+@media screen and (max-width: 1600px) {
+  .footer__content {
+    max-width: 1400px;
+  }
+}
 @media screen and (max-width: 320px) {
   .footer {
     min-height: 233px;

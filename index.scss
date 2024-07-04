@@ -31,7 +31,7 @@
     border: 4px solid #F97247;
     border-radius: 64px;
     @media screen and (max-width:1600px){
-      width: 1200px;
+      width: 1400px;
     }
     &__menu{
       max-width: 574px;
@@ -104,12 +104,89 @@
         padding-top: 4px;
       }
     }
+    &__burger-menu{
+      //display: none;
+      position: absolute;
+      top:66px;
+      left:0;
+      width:100%;
+      height: 100vh;
+      z-index: 6;
+      background-color: #191D0A;
+      padding: 30px 18px 0px;
+      .burger-menu__list{
+        list-style-type: none;
+        padding: 0;
+        &-item{
+          width:284px;
+          height: 56px;
+          border: 2px solid #F97247;
+          border-radius: 64px;
+          margin-bottom: 5px;
+          padding: 13px 20px;
+          &:hover{
+            cursor: pointer;
+            .list-item-link{
+              color:#F97247;
+            }
+          }
+          .list-item-link{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: "Lexend";
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            
+          }
+        }
+      }
+      .burger-menu__button-login, .burger-menu__button-signup{
+        width:284px;
+        height: 46px;
+        border-radius: 24px;
+        padding: 13px 20px;
+        color: #FFFFFF;
+        font-family: "Lexend";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        text-align: center;
+        margin-bottom: 5px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .burger-menu__button-login{
+        background-color: #311212;
+        border: 2px solid #EBF29D;
+        &:hover{
+          background-color: #4e1d1d;
+        }
+      }
+      .burger-menu__button-signup{
+        background-color: #F97247;
+        &:hover{
+          background-color: #fa805b;
+        }
+      }
+    }
+    .hidden{
+      display:none;
+    }
+    .visible{
+      display: block;
+    }
   }
 }
 
+@media screen and (max-width:1600px){
+  
+}
+
+
 @media screen and (max-width: 320px){
   .conteiner{
-    width:304px;
+    width: 100%;
     padding-top: 10px;
     min-height: 1438px;
     .header{

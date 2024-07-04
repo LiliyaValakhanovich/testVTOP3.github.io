@@ -127,6 +127,33 @@
   }
 }
 
+@media screen and (max-width:1600px){
+  .main{
+    padding: 0 100px 0 100px;
+    &__title{
+      max-width: 500px;
+      .title{
+        max-width: 500px;
+        font-size: 5rem;
+      }
+    }
+    &__blog{
+      max-width: 500px;
+      align-items: center;
+      &-title{
+        width: 470px;
+      }
+      &-conteiner{
+        width:470px;
+        &-card{
+          width:440px;
+          padding: 16px 40px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 320px){
   .main{
     min-height: 1064px;
@@ -188,8 +215,8 @@
         height: 421px;
         &-card{
           width: 258px;
-          height: 112px;
-          padding: 15px 35px;
+          height: 100px;
+          padding: 10px 35px;
           .card-text{
             font-size: 0.875rem;
             line-height: 1.25rem;

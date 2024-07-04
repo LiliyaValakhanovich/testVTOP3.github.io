@@ -99,6 +99,19 @@
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 1600px) {
+  .main__banner {
+    max-width: 315px;
+    gap: 8px;
+  }
+  .main__banner-line1, .main__banner-line2, .main__banner-line3 {
+    width: 97px;
+  }
+  .main__banner-line1 .image, .main__banner-line2 .image, .main__banner-line3 .image {
+    width: 97px;
+    height: 97px;
+  }
+}
 @media screen and (max-width: 320px) {
   .main__banner {
     transform: rotate(90deg);

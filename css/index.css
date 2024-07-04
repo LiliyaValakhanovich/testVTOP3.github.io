@@ -33,7 +33,7 @@
 }
 @media screen and (max-width: 1600px) {
   .conteiner .header {
-    width: 1200px;
+    width: 1400px;
   }
 }
 .conteiner .header__menu {
@@ -105,10 +105,80 @@
   width: 21px;
   padding-top: 4px;
 }
+.conteiner .header__burger-menu {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+  background-color: #191D0A;
+  padding: 30px 18px 0px;
+}
+.conteiner .header__burger-menu .burger-menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+.conteiner .header__burger-menu .burger-menu__list-item {
+  width: 284px;
+  height: 56px;
+  border: 2px solid #F97247;
+  border-radius: 64px;
+  margin-bottom: 5px;
+  padding: 13px 20px;
+}
+.conteiner .header__burger-menu .burger-menu__list-item:hover {
+  cursor: pointer;
+}
+.conteiner .header__burger-menu .burger-menu__list-item:hover .list-item-link {
+  color: #F97247;
+}
+.conteiner .header__burger-menu .burger-menu__list-item .list-item-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.conteiner .header__burger-menu .burger-menu__button-login, .conteiner .header__burger-menu .burger-menu__button-signup {
+  width: 284px;
+  height: 46px;
+  border-radius: 24px;
+  padding: 13px 20px;
+  color: #FFFFFF;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.conteiner .header__burger-menu .burger-menu__button-login:hover, .conteiner .header__burger-menu .burger-menu__button-signup:hover {
+  cursor: pointer;
+}
+.conteiner .header__burger-menu .burger-menu__button-login {
+  background-color: #311212;
+  border: 2px solid #EBF29D;
+}
+.conteiner .header__burger-menu .burger-menu__button-login:hover {
+  background-color: #4e1d1d;
+}
+.conteiner .header__burger-menu .burger-menu__button-signup {
+  background-color: #F97247;
+}
+.conteiner .header__burger-menu .burger-menu__button-signup:hover {
+  background-color: #fa805b;
+}
+.conteiner .header .hidden {
+  display: none;
+}
+.conteiner .header .visible {
+  display: block;
+}
 
 @media screen and (max-width: 320px) {
   .conteiner {
-    width: 304px;
+    width: 100%;
     padding-top: 10px;
     min-height: 1438px;
   }
