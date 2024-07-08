@@ -84,6 +84,11 @@
     max-width: 1400px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer__content {
+    max-width: 1000px;
+  }
+}
 @media screen and (max-width: 320px) {
   .footer {
     min-height: 233px;

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Lexend";
-  src: url(/fonts/Lexend/static/Lexend-Regular.ttf) format("truetype");
+  src: url(./fonts/Lexend/static/Lexend-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 
@@ -32,6 +32,9 @@
     border-radius: 64px;
     @media screen and (max-width:1600px){
       width: 1400px;
+    }
+    @media screen and (max-width:1200px){
+      width: 1000px;
     }
     &__menu{
       max-width: 574px;
