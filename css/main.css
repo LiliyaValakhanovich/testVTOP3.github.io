@@ -1,5 +1,5 @@
 .main {
-  max-height: 960px;
+  height: 960px;
   width: 100%;
   position: relative;
   display: flex;
@@ -100,8 +100,8 @@
   scrollbar-width: thin;
   scrollbar-color: #F97247 rgba(255, 255, 255, 0.12);
 }
-.main__blog-conteiner::-webkit-scrollbar-track {
-  height: 500px;
+.main__blog-conteiner::-webkit-scrollbar-thumb {
+  border-radius: 10px;
 }
 .main__blog-conteiner-card {
   display: flex;
@@ -151,6 +151,92 @@
   .main__blog-conteiner-card {
     width: 440px;
     padding: 16px 40px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main__title {
+    max-width: 330px;
+  }
+  .main__title .title {
+    max-width: 330px;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .main__title .button-partner {
+    height: 60px;
+  }
+  .main__blog {
+    max-width: 330px;
+    align-items: center;
+  }
+  .main__blog-title {
+    width: 330px;
+  }
+  .main__blog-conteiner {
+    width: 330px;
+    height: 495px;
+  }
+  .main__blog-conteiner-card {
+    width: 300px;
+    padding: 16px 40px;
+  }
+  .main__blog-conteiner-card .card-text {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    padding: 0;
+    width: 984px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 70px 0;
+    width: 728px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+  }
+  .main__dot-right {
+    width: 240px;
+    height: 240px;
+    top: 900px;
+    left: 650px;
+    filter: blur(150px);
+  }
+  .main__title {
+    margin: 0 auto;
+    position: absolute;
+    left: 84px;
+    z-index: 5;
+    max-width: 728px;
+    text-align: center;
+    align-items: center;
+  }
+  .main__title .title {
+    font-size: 5rem;
+    max-width: 600px;
+  }
+  .main__blog {
+    position: absolute;
+    top: 870px;
+    left: 184px;
+    max-width: 400px;
+  }
+  .main__blog-title {
+    width: 400px;
+  }
+  .main__blog-conteiner {
+    width: 400px;
+  }
+  .main__blog-conteiner-card {
+    width: 360px;
+    padding-top: 25px;
   }
 }
 @media screen and (max-width: 320px) {

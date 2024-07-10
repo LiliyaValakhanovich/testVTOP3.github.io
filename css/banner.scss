@@ -4,8 +4,7 @@
   display: flex;
   gap: 16px;
   width: 333.8px;
-  max-height: 1026px;
-  height: 100%;
+  height: 1026px;
   &-line1{
     display: flex;
     justify-content: space-between;
@@ -105,12 +104,47 @@
   .main__banner{
     max-width:315px;
     gap:8px;
+    height: 1026px;
     &-line1, &-line2, &-line3{
       width:97px;
       .image{
         width:97px;
         height: 97px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .main__banner{
+    max-width:265px;
+    gap:8px;
+    height: 1026px;
+    &-line1, &-line2, &-line3{
+      width:83px;
+      height: 100%;
+      .image{
+        width:83px;
+        height: 83px;
+      }
+      .image-big{
+        width: 83px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .main__banner{
+    transform: rotate(90deg);
+    gap: 8px;
+    width: 265px;
+    height: 1536px;
+    overflow: visible;
+    top:-180px;
+    &-line1, &-line2, &-line3{
+      height: 100%;
     }
   }
 }
@@ -123,6 +157,7 @@
     height: 659px;
     overflow: visible;
     position: absolute ;
+    top:70px;
     &-line1, &-line2, &-line3{
       width: 49px;
       height: 100%;

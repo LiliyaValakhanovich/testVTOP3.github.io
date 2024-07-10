@@ -84,9 +84,23 @@
     max-width: 1400px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .footer__content {
     max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer__content {
+    max-width: 984px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 0;
+    padding: 40px 48px 0;
+  }
+  .footer__content {
+    max-width: 728px;
   }
 }
 @media screen and (max-width: 320px) {
